@@ -1,15 +1,22 @@
 programa
 {
+
+	inclua biblioteca Matematica --> m
 	
 	funcao inicio()
 	{
-		real n1, n2
-		escreva("{ EXERCÍCIO 005 - Média do aluno }\n")
-		escreva("\nDigite a primeira nota: ")
-		leia(n1)
-		escreva("Digite a segunda nota: ")
-		leia(n2)
-		escreva("A media do aluno é ", (n1 + n2) / 2, "\n")
+		escreva("---------- EX013 ----------\n")
+		
+		real not1, not2, media
+		
+		escreva("\nDigite a 1º nota: ")
+		leia(not1)
+		escreva("Digite a 2º nota: ")
+		leia(not2)
+		media = (not1 + not2) / 2
+		media = m.arredondar(media, 1)
+		se (media >= 7) escreva("\nPARABÉNS! ")
+		escreva("Sua média final foi ", media, ".\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 254; 
+ * @POSICAO-CURSOR = 391; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
